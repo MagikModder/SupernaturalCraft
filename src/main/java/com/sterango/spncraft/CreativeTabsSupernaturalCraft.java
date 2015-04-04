@@ -17,7 +17,7 @@ super(tabLabel);
 @SideOnly(Side.CLIENT)
 public Item getTabIconItem()
 {
-return SupernaturalCraft.AntiPossessionTattoo;
+return SupernaturalCraft.Colt;
 }
 
 }

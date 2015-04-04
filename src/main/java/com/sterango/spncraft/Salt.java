@@ -38,7 +38,7 @@ public class Salt extends Item
 
     public boolean renderAsNormalBlock()
     {
-        return false;
+        return true;
     }
 
    

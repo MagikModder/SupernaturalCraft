@@ -32,6 +32,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import com.sterango.spncraft.HolyOil;
 
 @Mod(modid =  SupernaturalCraft.MODID, version =  SupernaturalCraft.VERSION)
 public class SupernaturalCraft
@@ -81,7 +82,7 @@ public class SupernaturalCraft
 	 public static Item DemonBlood;
 	 public static Item EMFMeter;
 	 public static Item Ectoplasm;
-	 public static Item HolyOil;
+	 public static Item HolyOil1;
 	 public static Item DTablet;
 	 public static Item LeviathanBlood;
 	 public static Item ATablet;
@@ -240,12 +241,13 @@ public class SupernaturalCraft
 		Ectoplasm = new ModItems().setUnlocalizedName("Ectoplasm").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft).setTextureName(SupernaturalCraft.MODID + ":" + "Ectoplasm").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft);
 		GameRegistry.registerItem(Ectoplasm, Ectoplasm.getUnlocalizedName().substring(5));
 //Holy Oil		
-		HolyOil = new ModItems().setUnlocalizedName("HolyOil").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft).setTextureName(SupernaturalCraft.MODID + ":" + "HolyOil").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft);
-		GameRegistry.registerItem(HolyOil, HolyOil.getUnlocalizedName().substring(5));
+		HolyOil1 = new HolyOil().setUnlocalizedName("HolyOil").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft).setTextureName(SupernaturalCraft.MODID + ":" + "HolyOil").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft);
+		GameRegistry.registerItem(HolyOil1, HolyOil1.getUnlocalizedName().substring(5));
 //Key to OZ		
 		Item KeytoOz;
 		KeytoOz = new ModItems().setUnlocalizedName("KeytoOz").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft).setTextureName(SupernaturalCraft.MODID + ":" + "KeytoOz").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft);
 		GameRegistry.registerItem(KeytoOz, KeytoOz.getUnlocalizedName().substring(5));
+	
 //Demon Tablet		
 		DTablet = new ModItems().setUnlocalizedName("DTablet").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft).setTextureName(SupernaturalCraft.MODID + ":" + "DTablet").setCreativeTab(SupernaturalCraft.tabSupernaturalCraft);
 		GameRegistry.registerItem(DTablet, DTablet.getUnlocalizedName().substring(5));

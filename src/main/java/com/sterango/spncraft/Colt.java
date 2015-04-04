@@ -80,9 +80,6 @@ public class Colt extends Item
            
                 entityarrow.setKnockbackStrength(500);
          
-
-           
-                entityarrow.setFire(100);
           
             par1ItemStack.damageItem(1, par3EntityPlayer);
             par2World.playSoundAtEntity(par3EntityPlayer, "random.bow", 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
@@ -113,7 +110,7 @@ public class Colt extends Item
      */
     public int getMaxItemUseDuration(ItemStack par1ItemStack)
     {
-        return 72000;
+        return 8000;
     }
 
     /**
